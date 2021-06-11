@@ -3,6 +3,8 @@ import { FiCheck, FiUser, FiMail } from 'react-icons/fi';
 
 import {
   Box,
+  Button,
+  Divider,
   Flex,
   Heading,
   HStack,
@@ -236,7 +238,7 @@ export default function Home() {
                     border="2px solid #52749a"
                     bg="#121214"
                     mr="8px"
-                    mt="-4px"
+                    mt="-3px"
                     cursor="pointer"
                     _checked={{
                       bg: '#04d361',
@@ -260,6 +262,44 @@ export default function Home() {
                   </Text>
                 </Flex>
               </Box>
+
+              <Button
+                type="submit"
+                h="56px"
+                fontSize="14px"
+                fontWeight="700"
+                lineHeight="16px"
+                textTransform="uppercase"
+                textAlign="center"
+                border="none"
+                borderRadius="5px"
+                color="gray.50"
+                bg="#8257e5"
+                _hover={{
+                  bg: '#8257e5',
+                }}
+              >
+                Quero embarcar na missão
+              </Button>
+            </Flex>
+
+            <Divider
+              display={['none', 'flex']}
+              h="1px"
+              w="100%"
+              borderStyle="none"
+              mt="58px"
+              bgGradient="linear(90deg, #2b454b, #074b35)"
+            />
+
+            <Flex justifyContent="center" alignItems="center" mt="24px">
+              <Image
+                src="/icons/security.svg"
+                alt="Security"
+                mr={['8px', '16px']}
+              />
+
+              <Text as="span">Suas informações estão seguras</Text>
             </Flex>
           </Flex>
         </Flex>
