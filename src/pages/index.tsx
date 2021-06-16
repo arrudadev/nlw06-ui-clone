@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FiCheck, FiUser, FiMail } from 'react-icons/fi';
 
 import {
@@ -22,6 +22,7 @@ import {
 
 export default function Home() {
   const [checked, setChecked] = useState(false);
+  const [isMinWidthLargerThan375, setIsMinWidthLargerThan375] = useState(false);
 
   const [isLargerThan375] = useMediaQuery('(min-width: 375px)');
 
@@ -32,6 +33,12 @@ export default function Home() {
 
   const chakraCheckBoxInputProps = getInputProps();
   const chakraCheckBoxProps = getCheckboxProps();
+
+  useEffect(() => {
+    if (isLargerThan375 !== isMinWidthLargerThan375) {
+      setIsMinWidthLargerThan375(isLargerThan375);
+    }
+  }, [isLargerThan375]);
 
   return (
     <main>
@@ -418,18 +425,22 @@ export default function Home() {
           </Heading>
 
           <Grid
-            templateColumns={isLargerThan375 ? 'unset' : 'repeat(3, 1fr)'}
-            templateAreas={isLargerThan375 ? `'one' 'two' 'three'` : 'none'}
-            gap={isLargerThan375 ? 'unset' : '12px'}
+            templateColumns={
+              isMinWidthLargerThan375 ? 'unset' : 'repeat(3, 1fr)'
+            }
+            templateAreas={
+              isMinWidthLargerThan375 ? `'one' 'two' 'three'` : 'none'
+            }
+            gap={isMinWidthLargerThan375 ? 'unset' : '12px'}
           >
             <Box
-              display={isLargerThan375 ? 'flex' : 'grid'}
+              display={isMinWidthLargerThan375 ? 'flex' : 'grid'}
               alignItems="center"
               justifyContent="center"
-              gridArea={isLargerThan375 ? 'one' : 'unset'}
+              gridArea={isMinWidthLargerThan375 ? 'one' : 'unset'}
             >
               <Stack
-                direction={isLargerThan375 ? 'row' : 'column'}
+                direction={isMinWidthLargerThan375 ? 'row' : 'column'}
                 spacing="12px"
               >
                 <Image
@@ -469,13 +480,13 @@ export default function Home() {
               </Stack>
             </Box>
             <Box
-              display={isLargerThan375 ? 'flex' : 'grid'}
+              display={isMinWidthLargerThan375 ? 'flex' : 'grid'}
               alignItems="center"
               justifyContent="center"
-              gridArea={isLargerThan375 ? 'two' : 'unset'}
+              gridArea={isMinWidthLargerThan375 ? 'two' : 'unset'}
             >
               <Stack
-                direction={isLargerThan375 ? 'row' : 'column'}
+                direction={isMinWidthLargerThan375 ? 'row' : 'column'}
                 spacing="12px"
               >
                 <Image
@@ -508,13 +519,13 @@ export default function Home() {
               </Stack>
             </Box>
             <Box
-              display={isLargerThan375 ? 'flex' : 'grid'}
+              display={isMinWidthLargerThan375 ? 'flex' : 'grid'}
               alignItems="center"
               justifyContent="center"
-              gridArea={isLargerThan375 ? 'three' : 'unset'}
+              gridArea={isMinWidthLargerThan375 ? 'three' : 'unset'}
             >
               <Stack
-                direction={isLargerThan375 ? 'row' : 'column'}
+                direction={isMinWidthLargerThan375 ? 'row' : 'column'}
                 spacing="12px"
               >
                 <Image
