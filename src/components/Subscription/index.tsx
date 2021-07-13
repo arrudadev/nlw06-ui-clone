@@ -20,6 +20,7 @@ import {
 } from '@chakra-ui/react';
 
 import { Banner } from './Banner';
+import { Container } from './Container';
 
 export function Subscription() {
   const [checked, setChecked] = useState(false);
@@ -42,11 +43,7 @@ export function Subscription() {
 
   return (
     <Banner>
-      <Flex
-        justifyContent="space-between"
-        m={['unset', '0 24px']}
-        w={['100%', '1120px']}
-      >
+      <Container>
         <Flex
           flexDirection="column"
           justifyContent="center"
@@ -325,7 +322,7 @@ export function Subscription() {
             right="-16px"
           />
         </Flex>
-      </Flex>
+      </Container>
     </Banner>
   );
 }
