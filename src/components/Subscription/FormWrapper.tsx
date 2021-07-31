@@ -1,5 +1,6 @@
 import { Divider, Flex, Image, Text } from '@chakra-ui/react';
 
+import { BinaryIcons } from './BinaryIcons';
 import { Form } from './Form';
 
 export function FormWrapper() {
@@ -44,32 +45,7 @@ export function FormWrapper() {
         <Text as="span">Suas informações estão seguras</Text>
       </Flex>
 
-      <Image
-        src="/icons/binary01.svg"
-        alt="Binary"
-        display={['none', 'flex']}
-        position="absolute"
-        top="95px"
-        left="-49px"
-      />
-
-      <Image
-        src="/icons/binary02.svg"
-        alt="Binary"
-        display={['none', 'flex']}
-        position="absolute"
-        top="-109px"
-        right="-33px"
-      />
-
-      <Image
-        src="/icons/binary03.svg"
-        alt="Binary"
-        display={['none', 'flex']}
-        position="absolute"
-        bottom="38px"
-        right="-16px"
-      />
+      <BinaryIcons />
     </Flex>
   );
 }
