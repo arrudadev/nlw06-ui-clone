@@ -1,0 +1,25 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+  class="styles_icon__1tWs6">
+  <path
+    d="M53.3334 26.6667V33.3333C53.3334 35.5425 51.5426 37.3333 49.3334 37.3333H14.6667C12.4576 37.3333 10.6667 35.5425 10.6667 33.3333V13.3333C10.6667 10.3878 13.0546 8 16.0001 8H24.0001"
+    stroke="url(#practice1)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M50.6642 56.0002H13.3358C11.6625 56.0002 10.0863 55.2148 9.07862 53.8789C8.07095 52.5431 7.74872 50.8117 8.20833 49.2028L11.0465 39.2677C11.3735 38.1228 12.42 37.3335 13.6107 37.3335H50.3893C51.58 37.3335 52.6264 38.1228 52.9534 39.2677L55.7917 49.2028C56.2513 50.8117 55.929 52.5431 54.9214 53.8789C53.9137 55.2148 52.3374 56.0002 50.6642 56.0002Z"
+    stroke="url(#practice)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M26.6667 48.0008H37.3334" stroke="#E1E1E6" stroke-width="4" stroke-linecap="square" stroke-linejoin="round">
+  </path>
+  <path d="M40.0001 18.6667L34.6667 13.3333L40.0001 8" stroke="#E1E1E6" stroke-width="4" stroke-linecap="square"
+    stroke-linejoin="round"></path>
+  <path d="M48 8L53.3333 13.3333L48 18.6667" stroke="#E1E1E6" stroke-width="4" stroke-linecap="square"
+    stroke-linejoin="round"></path>
+  <defs>
+    <linearGradient id="practice1" x1="32.0001" y1="8" x2="32.0001" y2="37.3333" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8257E5"></stop>
+      <stop offset="1" stop-color="#8257E5" stop-opacity="0.25"></stop>
+    </linearGradient>
+    <linearGradient id="practice" x1="51.9999" y1="56.0002" x2="51.9999" y2="35.9999" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#04D361"></stop>
+      <stop offset="1" stop-color="#04D361" stop-opacity="0.25"></stop>
+    </linearGradient>
+  </defs>
+</svg>
