@@ -1,5 +1,7 @@
 import { Flex, Grid, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
 
+import { Pillars } from './Pillars';
+
 export function Methodology() {
   return (
     <Flex
@@ -13,7 +15,7 @@ export function Methodology() {
         flexDir="column"
         justifyContent="space-between"
         w="1120px"
-        m={['0 24px', '0 24px', 'unset']}
+        m={['0 24px', '0 24px', '0 24px', 'unset']}
       >
         <Heading
           fontWeight="700"
@@ -182,6 +184,8 @@ export function Methodology() {
             </Text>
           </Grid>
         </SimpleGrid>
+
+        <Pillars />
       </Flex>
     </Flex>
   );
