@@ -1,3 +1,4 @@
+import { Editions } from '../components/Editions';
 import { Methodology } from '../components/Methodology';
 import { Scholarship } from '../components/Scholarship';
 import { Subscription } from '../components/Subscription';
@@ -13,6 +14,8 @@ export default function Home() {
       <Technologies />
 
       <Methodology />
+
+      <Editions />
     </main>
   );
 }
