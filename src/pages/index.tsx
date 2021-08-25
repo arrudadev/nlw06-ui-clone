@@ -3,6 +3,7 @@ import { Methodology } from '../components/Methodology';
 import { Scholarship } from '../components/Scholarship';
 import { Subscription } from '../components/Subscription';
 import { Technologies } from '../components/Technologies';
+import { Testimonials } from '../components/Testimonials';
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <Methodology />
 
       <Editions />
+
+      <Testimonials />
     </main>
   );
 }
