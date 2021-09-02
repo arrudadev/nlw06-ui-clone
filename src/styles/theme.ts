@@ -9,6 +9,7 @@ export const theme = extendTheme({
     },
     green: {
       '500': '#04d361',
+      '400': '#4fe090',
     },
   },
   fonts: {
