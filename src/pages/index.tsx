@@ -1,6 +1,7 @@
 import { CommunityEvent } from '../components/CommunityEvent';
 import { Editions } from '../components/Editions';
 import { Methodology } from '../components/Methodology';
+import { Missions } from '../components/Missions';
 import { Scholarship } from '../components/Scholarship';
 import { Subscription } from '../components/Subscription';
 import { Technologies } from '../components/Technologies';
@@ -22,6 +23,8 @@ export default function Home() {
       <Testimonials />
 
       <CommunityEvent />
+
+      <Missions />
     </main>
   );
 }
