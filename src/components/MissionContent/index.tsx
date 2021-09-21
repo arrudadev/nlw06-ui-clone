@@ -1,5 +1,7 @@
 import { Box, Flex, Grid, Heading, Image, Text } from '@chakra-ui/react';
 
+import { MissionContentCard } from './MissionContentCard';
+
 export function MissionContent() {
   return (
     <Flex
@@ -31,53 +33,35 @@ export function MissionContent() {
           templateColumns={['1fr', '1fr', '1fr', 'repeat(2, 1fr)']}
           gap={['16px', '16px', '16px', '32px']}
         >
-          <Flex flexDir="column" borderRadius="5px" bg="gray.900">
-            <Flex
-              alignItems="center"
-              h="78px"
-              position="relative"
-              p="20px 24px"
-              border="1px solid #3f2e68"
-              borderRadius="5px 5px 0 0"
-              bgGradient="linear(3.65deg,#1d1929,#121214 100.4%)"
-            >
-              <Image
-                src="/mission-content/cellphone.svg"
-                w="40px"
-                h="40px"
-                mr="16px"
-              />
+          <MissionContentCard
+            icon="cellphone.svg"
+            title="Uma aplicação completa"
+            description="Durante o evento, vamos desenvolver uma aplicação completa em cada trilha, para você entender como grandes empresas estão utilizando as ferramentas no dia-a-dia, além de expandir o seu portfólio e conhecer novas tecnologias na prática."
+          />
 
-              <Heading
-                as="h4"
-                color="gray.50"
-                fontWeight="700"
-                fontSize="20px"
-                lineHeight="30px"
-              >
-                Uma aplicação completa
-              </Heading>
-            </Flex>
+          <MissionContentCard
+            icon="code.svg"
+            title="Conteúdo Prático"
+            description="O conteúdo do NLW será prático, para você levar suas habilidades para o próximo nível e ter todas as condições necessárias para acessar ótimas oportunidades no mercado, encarar os desafios do mundo real e construir aplicações de ponta."
+          />
 
-            <Box
-              p="24px 32px"
-              border="1px solid #29292e"
-              borderTop="unset"
-              borderRadius="0 0 5px 5px"
-            >
-              <Text
-                color="gray.50"
-                fontSize="16px"
-                fontWeight="400"
-                lineHeight="25px"
-              >
-                Durante o evento, vamos desenvolver uma aplicação completa em
-                cada trilha, para você entender como grandes empresas estão
-                utilizando as ferramentas no dia-a-dia, além de expandir o seu
-                portfólio e conhecer novas tecnologias na prática.
-              </Text>
-            </Box>
-          </Flex>
+          <MissionContentCard
+            icon="networking.svg"
+            title="Networking 100% digital"
+            description="Você terá acesso a uma comunidade extremamente engajada que conta com cabeças super inteligentes, onde poderá tirar suas dúvidas, se conectar e interagir com outros devs e acessar ótimas oportunidades."
+          />
+
+          <MissionContentCard
+            icon="challenges.svg"
+            title="Desafios e prêmios"
+            description="Você será desafiado durante o NLW, para assimilar e internalizar profundamente cada conceito. E o melhor: poderá ganhar brindes exclusivos da Rocketseat, além de bolsas de estudo para o nosso programa de aceleração profissional."
+          />
+
+          <MissionContentCard
+            icon="bags.svg"
+            title="Programa de bolsas"
+            description="Ao embarcar no NLW e participar do evento, você poderá concorrer a uma bolsa na próxima turma do Ignite, o nosso programa de aceleração profissional. Serão 100 vagas para aqueles que se destacarem durante o evento."
+          />
         </Grid>
       </Flex>
     </Flex>
