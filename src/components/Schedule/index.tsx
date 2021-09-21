@@ -1,4 +1,6 @@
-import { Flex, Grid, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
+import { Flex, Heading, SimpleGrid } from '@chakra-ui/react';
+
+import { ScheduleCard } from './ScheduleCard';
 
 export function Schedule() {
   return (
@@ -28,385 +30,61 @@ export function Schedule() {
         </Heading>
 
         <SimpleGrid spacing="28px" minChildWidth="354px">
-          <Flex
-            flexDir="column"
-            borderRadius="5px"
-            border="1.5px solid #29292e"
-            p="24px 24px 32px"
-            position="relative"
-          >
-            <Flex
-              alignItems="center"
-              justifyContent="center"
-              mb="24px"
-              bg="#29292e"
-              h="28px"
-              maxW="111px"
-              borderRadius="5px"
-            >
-              <Text
-                fontSize="16px"
-                fontWeight="700"
-                lineHeight="16px"
-                color="#fff"
-              >
-                20 de junho
-              </Text>
-            </Flex>
+          <ScheduleCard
+            date="20 de junho"
+            hours={[
+              { hour: '19h00', description: 'Encontro ao vivo' },
+              { hour: '20h00', description: 'Aula prática 01' },
+            ]}
+          />
 
-            <Grid gap="16px">
-              <Flex>
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="500"
-                  lineHeight="18px"
-                  pr="16px"
-                  color="#737380"
-                  borderRight="1px solid #29292e"
-                >
-                  19h00
-                </Text>
+          <ScheduleCard
+            date="21 de junho"
+            hours={[
+              { hour: '19h00', description: 'Encontro ao vivo' },
+              { hour: '20h00', description: 'Aula prática 02' },
+            ]}
+          />
 
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="700"
-                  lineHeight="18px"
-                  pl="16px"
-                  color="#737380"
-                  bgGradient="linear(270deg,#2ada79 .08%,#4763ff 39.15%,#9570e9 100.08%)"
-                  bgClip="text"
-                >
-                  Encontro ao vivo
-                </Text>
-              </Flex>
+          <ScheduleCard
+            date="22 de junho"
+            hours={[
+              { hour: '19h00', description: 'Encontro ao vivo' },
+              { hour: '20h00', description: 'Aula prática 03' },
+            ]}
+          />
 
-              <Flex>
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="500"
-                  lineHeight="18px"
-                  pr="16px"
-                  color="#737380"
-                  borderRight="1px solid #29292e"
-                >
-                  20h00
-                </Text>
+          <ScheduleCard
+            date="23 de junho"
+            hours={[
+              { hour: '19h00', description: 'Encontro ao vivo' },
+              { hour: '20h00', description: 'Aula prática 04' },
+            ]}
+          />
 
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="700"
-                  lineHeight="18px"
-                  pl="16px"
-                  color="#737380"
-                  bgGradient="linear(270deg,#2ada79 .08%,#4763ff 39.15%,#9570e9 100.08%)"
-                  bgClip="text"
-                >
-                  Aula prática 01
-                </Text>
-              </Flex>
-            </Grid>
+          <ScheduleCard
+            date="24 de junho"
+            hours={[
+              { hour: '19h00', description: 'Encontro ao vivo' },
+              { hour: '20h00', description: 'Aula prática 05' },
+            ]}
+          />
 
-            <Image
-              src="/schedule/arrow.svg"
-              alt="Arrow"
-              w={['32px', '32px', 'unset']}
-              position="absolute"
-              top={['unset', 'unset', '40px']}
-              right={['unset', 'unset', '-10px']}
-              left={['60px', '60px', 'unset']}
-              bottom={['4px', '4px', 'unset']}
-              transform={['rotate(90deg)', 'rotate(90deg)', 'unset']}
-            />
-          </Flex>
+          <ScheduleCard
+            date="25 de junho"
+            hours={[{ hour: '09h00', description: 'O Próximo Nível' }]}
+          />
 
-          <Flex
-            flexDir="column"
-            borderRadius="5px"
-            border="1.5px solid #29292e"
-            p="24px 24px 32px"
-            position="relative"
-          >
-            <Flex
-              alignItems="center"
-              justifyContent="center"
-              mb="24px"
-              bg="#29292e"
-              h="28px"
-              maxW="111px"
-              borderRadius="5px"
-            >
-              <Text
-                fontSize="16px"
-                fontWeight="700"
-                lineHeight="16px"
-                color="#fff"
-              >
-                20 de junho
-              </Text>
-            </Flex>
+          <ScheduleCard
+            date="27 de junho"
+            hours={[{ hour: '20h00', description: 'Encontro de encerramento' }]}
+          />
 
-            <Grid gap="16px">
-              <Flex>
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="500"
-                  lineHeight="18px"
-                  pr="16px"
-                  color="#737380"
-                  borderRight="1px solid #29292e"
-                >
-                  19h00
-                </Text>
-
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="700"
-                  lineHeight="18px"
-                  pl="16px"
-                  color="#737380"
-                  bgGradient="linear(270deg,#2ada79 .08%,#4763ff 39.15%,#9570e9 100.08%)"
-                  bgClip="text"
-                >
-                  Encontro ao vivo
-                </Text>
-              </Flex>
-
-              <Flex>
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="500"
-                  lineHeight="18px"
-                  pr="16px"
-                  color="#737380"
-                  borderRight="1px solid #29292e"
-                >
-                  20h00
-                </Text>
-
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="700"
-                  lineHeight="18px"
-                  pl="16px"
-                  color="#737380"
-                  bgGradient="linear(270deg,#2ada79 .08%,#4763ff 39.15%,#9570e9 100.08%)"
-                  bgClip="text"
-                >
-                  Aula prática 01
-                </Text>
-              </Flex>
-            </Grid>
-
-            <Image
-              src="/schedule/arrow.svg"
-              alt="Arrow"
-              w={['32px', '32px', 'unset']}
-              position="absolute"
-              top={['unset', 'unset', '40px']}
-              right={['unset', 'unset', '-10px']}
-              left={['60px', '60px', 'unset']}
-              bottom={['4px', '4px', 'unset']}
-              transform={['rotate(90deg)', 'rotate(90deg)', 'unset']}
-            />
-          </Flex>
-
-          <Flex
-            flexDir="column"
-            borderRadius="5px"
-            border="1.5px solid #29292e"
-            p="24px 24px 32px"
-            position="relative"
-          >
-            <Flex
-              alignItems="center"
-              justifyContent="center"
-              mb="24px"
-              bg="#29292e"
-              h="28px"
-              maxW="111px"
-              borderRadius="5px"
-            >
-              <Text
-                fontSize="16px"
-                fontWeight="700"
-                lineHeight="16px"
-                color="#fff"
-              >
-                20 de junho
-              </Text>
-            </Flex>
-
-            <Grid gap="16px">
-              <Flex>
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="500"
-                  lineHeight="18px"
-                  pr="16px"
-                  color="#737380"
-                  borderRight="1px solid #29292e"
-                >
-                  19h00
-                </Text>
-
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="700"
-                  lineHeight="18px"
-                  pl="16px"
-                  color="#737380"
-                  bgGradient="linear(270deg,#2ada79 .08%,#4763ff 39.15%,#9570e9 100.08%)"
-                  bgClip="text"
-                >
-                  Encontro ao vivo
-                </Text>
-              </Flex>
-
-              <Flex>
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="500"
-                  lineHeight="18px"
-                  pr="16px"
-                  color="#737380"
-                  borderRight="1px solid #29292e"
-                >
-                  20h00
-                </Text>
-
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="700"
-                  lineHeight="18px"
-                  pl="16px"
-                  color="#737380"
-                  bgGradient="linear(270deg,#2ada79 .08%,#4763ff 39.15%,#9570e9 100.08%)"
-                  bgClip="text"
-                >
-                  Aula prática 01
-                </Text>
-              </Flex>
-
-              <Image
-                src="/schedule/arrow.svg"
-                alt="Arrow"
-                w={['32px', '32px', 'unset']}
-                position="absolute"
-                top={['unset', 'unset', '40px']}
-                right={['unset', 'unset', '-10px']}
-                left={['60px', '60px', 'unset']}
-                bottom={['4px', '4px', 'unset']}
-                transform={['rotate(90deg)', 'rotate(90deg)', 'unset']}
-              />
-            </Grid>
-          </Flex>
-
-          <Flex
-            flexDir="column"
-            borderRadius="5px"
-            border="1.5px solid #29292e"
-            p="24px 24px 32px"
-            position="relative"
-          >
-            <Flex
-              alignItems="center"
-              justifyContent="center"
-              mb="24px"
-              bg="#29292e"
-              h="28px"
-              maxW="111px"
-              borderRadius="5px"
-            >
-              <Text
-                fontSize="16px"
-                fontWeight="700"
-                lineHeight="16px"
-                color="#fff"
-              >
-                20 de junho
-              </Text>
-            </Flex>
-
-            <Grid gap="16px">
-              <Flex>
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="500"
-                  lineHeight="18px"
-                  pr="16px"
-                  color="#737380"
-                  borderRight="1px solid #29292e"
-                >
-                  19h00
-                </Text>
-
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="700"
-                  lineHeight="18px"
-                  pl="16px"
-                  color="#737380"
-                  bgGradient="linear(270deg,#2ada79 .08%,#4763ff 39.15%,#9570e9 100.08%)"
-                  bgClip="text"
-                >
-                  Encontro ao vivo
-                </Text>
-              </Flex>
-
-              <Flex>
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="500"
-                  lineHeight="18px"
-                  pr="16px"
-                  color="#737380"
-                  borderRight="1px solid #29292e"
-                >
-                  20h00
-                </Text>
-
-                <Text
-                  display="inline-block"
-                  fontSize="18px"
-                  fontWeight="700"
-                  lineHeight="18px"
-                  pl="16px"
-                  color="#737380"
-                  bgGradient="linear(270deg,#2ada79 .08%,#4763ff 39.15%,#9570e9 100.08%)"
-                  bgClip="text"
-                >
-                  Aula prática 01
-                </Text>
-              </Flex>
-            </Grid>
-
-            <Image
-              src="/schedule/arrow.svg"
-              alt="Arrow"
-              w={['32px', '32px', 'unset']}
-              position="absolute"
-              top={['unset', 'unset', '40px']}
-              right={['unset', 'unset', '-10px']}
-              left={['60px', '60px', 'unset']}
-              bottom={['4px', '4px', 'unset']}
-              transform={['rotate(90deg)', 'rotate(90deg)', 'unset']}
-            />
-          </Flex>
+          <ScheduleCard
+            date="28 de junho"
+            hours={[{ hour: '08h00', description: 'Matrículas do Ignite' }]}
+            isTheLast
+          />
         </SimpleGrid>
       </Flex>
     </Flex>
