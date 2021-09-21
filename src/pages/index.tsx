@@ -1,6 +1,7 @@
 import { CommunityEvent } from '../components/CommunityEvent';
 import { Editions } from '../components/Editions';
 import { Methodology } from '../components/Methodology';
+import { MissionContent } from '../components/MissionContent';
 import { Missions } from '../components/Missions';
 import { Scholarship } from '../components/Scholarship';
 import { Subscription } from '../components/Subscription';
@@ -25,6 +26,8 @@ export default function Home() {
       <CommunityEvent />
 
       <Missions />
+
+      <MissionContent />
     </main>
   );
 }
