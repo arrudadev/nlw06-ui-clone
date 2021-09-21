@@ -3,6 +3,7 @@ import { Editions } from '../components/Editions';
 import { Methodology } from '../components/Methodology';
 import { MissionContent } from '../components/MissionContent';
 import { Missions } from '../components/Missions';
+import { Schedule } from '../components/Schedule';
 import { Scholarship } from '../components/Scholarship';
 import { Subscription } from '../components/Subscription';
 import { Technologies } from '../components/Technologies';
@@ -28,6 +29,8 @@ export default function Home() {
       <Missions />
 
       <MissionContent />
+
+      <Schedule />
     </main>
   );
 }
