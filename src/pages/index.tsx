@@ -1,5 +1,6 @@
 import { CommunityEvent } from '../components/CommunityEvent';
 import { Editions } from '../components/Editions';
+import { Footer } from '../components/Footer';
 import { Methodology } from '../components/Methodology';
 import { MissionContent } from '../components/MissionContent';
 import { Missions } from '../components/Missions';
@@ -31,6 +32,8 @@ export default function Home() {
       <MissionContent />
 
       <Schedule />
+
+      <Footer />
     </main>
   );
 }
